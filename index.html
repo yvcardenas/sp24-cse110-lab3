@@ -1,0 +1,123 @@
+<!-- These are the instructions for part 1:
+-a title (e.g. "Pomodoro Timer First Brainstorm")
+-subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
+-subtitle for the date
+-attendance list
+-agenda of what the meeting will cover
+-things that were unfinished business from last meeting
+-things that are new business that need to be talked about
+-any miscellaneous comments / questions / concerns that anyone would like to bring up
+-pictures of any diagrams / architecture / things that were presented
+    -SWE meetings often have people diagram things on a whiteboard so we want those captured as well
+-For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
+    -audio recording the meeting
+    -video recording of the meeting
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewpoint" content="width=device-width, initialscale=1.0">
+    <title>Meeting Minutes 404</title>
+    <link rel="icon" type="image/x-icon" href="./Team404_Logo.png">
+</head>
+<body>
+<header>
+    <img src="./Team404_Logo.png"
+         alt="Teamlogo"
+         width="100"/>
+    <h1>Meeting Minutes : <span style="color: blue;">404</span></h1>
+    <div>
+        <label for="Meeting Topic">Meeting Topic:</label>
+        <input type="text" id="Meeting Topic" name="Meeting Topic" placeholder="Write"> <br>
+        <label for="Check-In Link">Check-In Link</label>
+        <input type="text" id="Check-In Link" name="Check-In Link" placeholder="Write"> <br>
+        <label for="Date">Date:</label>
+        <input type="date" id="date" name="Date" placeholder="MM/DD/YYYY">
+    </div>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Attendee Information</legend>
+            <label for="attendeeName">Name:</label>
+            <input type="text" id="attendeeName" name="attendeeName" placeholder="Enter name"><br>
+            <label for="attendeeEmail">Email:</label>
+            <input type="email" id="attendeeEmail" name="attendeeEmail" placeholder="Enter email"><br>
+            <label for="attendeeRole">Role:</label>
+            <input type="text" id="attendeeRole" name="attendeeRole" placeholder="Enter role"><br>
+            <label for="attendeeCheckIn">Check-In:</label>
+            <input type="checkbox" id="attendeeCheckIn" name="attendeeCheckIn"> Checked in<br>
+            <label for="attendeeArrival">Arrival Time:</label>
+            <input type="time" id="attendeeArrival" name="attendeeArrival"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Meeting Details</legend>
+            <label for="meetingType">Meeting Type:</label>
+            <select id="meetingType" name="meetingType">
+                <option value="physical">Physical</option>
+                <option value="virtual">Virtual</option>
+            </select><br>
+            <label for="meetingNotes">Notes:</label><br>
+            <textarea id="meetingNotes" name="meetingNotes" rows="4" cols="50"></textarea><br>
+            <label for="meetingRating">Meeting Rating:</label>
+            <input type="range" id="meetingRating" name="meetingRating" min="1" max="10"><br>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</header>
+<main>
+    <div>
+        <h2>Attendance List</h2>
+        <button type="button">Add Attendee</button>
+    </div>
+    <section>
+        <h2>Agenda</h2>
+        <ol>
+            <li>Intoduce <b class="group">Everyone</b></li>
+            <li>Play <i>scribble.io</i></li>
+            <li>Ask about availibility</li>
+        </ol>
+        <h3>Planned Topics:</h3>
+        <strong>Urgent Topics:</strong>
+        <ul>
+            <li>Decide on a team name and theme.</li>
+            <li>Choose a mascot</li>
+            <li>Decide on <em>next</em> meeting data/time</li>
+        </ul>
+        <h3>Unfinished Discussed Topics:</h3>
+        <h3>New Topics:</h3>
+    </section>
+    <h2>Miscellaneous</h2>
+    <p>Here you can place any <b>additional</b> resources or comments you may have.</p>
+    <h4>Recording of Meeting</h4>
+    <audio controls>
+        <source src="meeting.mp3" type="audio/mpeg">
+        This browser does not support the audio file.
+    </audio>
+    <h4>Video of Meeting</h4>
+    <video controls width="420" height="240">
+        <source src="meeting.mp4" type="video/mp4">
+        This browser does not support the video.
+    </video>
+    <details>
+        <summary>Details</summary>
+        You are a wonderful individual and team mate, keep slaying.
+    </details>
+</main>
+<footer>
+    <nav>
+        <ul>
+            <h4>Quicklinks</h4>
+            <li><a href="#attendance">Attendance List</a></li>
+            <li><a href="agenda">Agenda</a></li>
+            <li><a href="miscellaneous">Miscellaneous</a></li>
+            <li><a href="media">Media</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
+
+
+
+
+
