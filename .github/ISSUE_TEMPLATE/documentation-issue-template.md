@@ -1,5 +1,5 @@
 ---
-name: Description Issue Template
+name: Documentation Issue Template
 about: Describe an issue with documentation here.
 title: ''
 labels: ''
