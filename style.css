@@ -110,7 +110,7 @@ nav > ul {
 }
 
 #meetingTopic {
-    font-size: italic;
+    font-size:small;
 }
 
 * {
@@ -126,7 +126,7 @@ input[type="text"] {
 }
 
 button:hover {
-    background-color: color-mix(in srgb, white 80%, black 20%);
+    background-color: grey;
 }
 
 input[type="text"], textarea {
@@ -142,5 +142,6 @@ fieldset + fieldset {
 }
 
 button.add-attendee {
-    background-color: color(srgb red green blue);
+    background-color: lightblue;
 }
+
