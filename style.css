@@ -11,7 +11,6 @@ body{
     background-color: var(--main-bg-color, #FFFFFF);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
-    font-size: 1rem;
     line-height: 1.5;
     margin: 2rem;
     padding: 1rem;
@@ -23,6 +22,16 @@ h1 {
 
 h2 {
     font-size: 24px;
+    margin-top: 20px;
+}
+
+h4{
+    margin-top: 10px;
+}
+
+audio, video{
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 header {
@@ -37,7 +46,7 @@ header {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 footer {
@@ -76,6 +85,7 @@ fieldset{
     border-width: 2px;
     /*border radius*/
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 ul>li{
@@ -126,15 +136,17 @@ input[type="text"] {
 }
 
 button:hover {
-    background-color: grey;
+    background-color: color-mix(in srgb, white 80%, black 20%);
+    margin-top: 10px;
 }
 
 input[type="text"], textarea {
-    width: 100%;
+    width: calc(100%-10px);
+    margin-bottom: 10px;
 }
 
 fieldset ~ fieldset {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 fieldset + fieldset {
@@ -142,6 +154,7 @@ fieldset + fieldset {
 }
 
 button.add-attendee {
-    background-color: lightblue;
+    background-color: color(srgb red green blue);
+    margin-top: 10px;
 }
 
