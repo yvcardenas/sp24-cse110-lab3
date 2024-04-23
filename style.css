@@ -1,0 +1,146 @@
+/*
+Important things to remembers:
+- although bulk of CSS is included in this external CSS stylesheet, include at least one example of inline and internal CSS
+- include every item from every bullet point in the checklist atleast once
+*/
+:root{
+    --main-bg-color: #F0F8FF;
+}
+
+body{
+    background-color: var(--main-bg-color, #FFFFFF);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    padding: 20px;
+}
+
+p{
+    font-size: 18px;
+}
+
+nav {
+    margin: 10px 20px; /* short margin*/
+}
+
+nav {
+    /*long padding*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul{
+    /*short padding*/
+    padding: 0 10px;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+fieldset{
+    /*border style*/
+    border-style: solid;
+    /*border color*/
+    border-color: black;
+    /*border width*/
+    border-width: 2px;
+    /*border radius*/
+    border-radius: 5px;
+}
+
+ul>li{
+    display: inline;
+    margin-right: 1cm;
+}
+
+nav a:link{
+    color: blue;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: normal;
+}
+
+nav a:hover{
+    color: rgb(168, 52, 235);
+}
+
+nav a:active{
+    color: hsla(184, 81%, 81%, 1);
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav > ul {
+    padding: 0;
+}
+.group{
+    font-weight: bold;
+}
+
+#meetingTopic {
+    font-size: italic;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: color-mix(in srgb, white 80%, black 20%);
+}
+
+input[type="text"], textarea {
+    width: 100%;
+}
+
+fieldset ~ fieldset {
+    margin-top: 20px;
+}
+
+fieldset + fieldset {
+    margin-top: 30px;
+}
+
+button.add-attendee {
+    background-color: color(srgb red green blue);
+}
